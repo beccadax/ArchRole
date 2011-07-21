@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		841B258813D8DC46009F0283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258713D8DC46009F0283 /* Cocoa.framework */; };
 		841B259213D8DC46009F0283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B259013D8DC46009F0283 /* InfoPlist.strings */; };
-		841B259613D8DC46009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B259513D8DC46009F0283 /* ArchRole.m */; };
 		841B259E13D8DC46009F0283 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B259D13D8DC46009F0283 /* SenTestingKit.framework */; };
 		841B259F13D8DC46009F0283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258713D8DC46009F0283 /* Cocoa.framework */; };
 		841B25A213D8DC46009F0283 /* ArchRole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258413D8DC46009F0283 /* ArchRole.framework */; };
 		841B25A813D8DC47009F0283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B25A613D8DC47009F0283 /* InfoPlist.strings */; };
 		841B25AA13D8DC47009F0283 /* ArchRoleTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 841B25A913D8DC47009F0283 /* ArchRoleTests.h */; };
 		841B25AC13D8DC47009F0283 /* ArchRoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25AB13D8DC47009F0283 /* ArchRoleTests.m */; };
+		841B25B713D8DD08009F0283 /* ArchRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 841B25B513D8DD08009F0283 /* ArchRole.h */; };
+		841B25B813D8DD08009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25B613D8DD08009F0283 /* ArchRole.m */; };
+		841B25B913D8DD08009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25B613D8DD08009F0283 /* ArchRole.m */; };
+		841B25BC13D8DE33009F0283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 841B25BB13D8DE33009F0283 /* README.md */; };
+		841B25BD13D8DE33009F0283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 841B25BB13D8DE33009F0283 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,17 +38,19 @@
 		841B258A13D8DC46009F0283 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		841B258B13D8DC46009F0283 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		841B258C13D8DC46009F0283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		841B258F13D8DC46009F0283 /* ArchRole-Info.plist */ = {isa = PBXFileReference; path = "ArchRole-Info.plist"; sourceTree = "<group>"; };
+		841B258F13D8DC46009F0283 /* ArchRole-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArchRole-Info.plist"; sourceTree = "<group>"; };
 		841B259113D8DC46009F0283 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		841B259313D8DC46009F0283 /* ArchRole-Prefix.pch */ = {isa = PBXFileReference; path = "ArchRole-Prefix.pch"; sourceTree = "<group>"; };
-		841B259413D8DC46009F0283 /* ArchRole.h */ = {isa = PBXFileReference; path = ArchRole.h; sourceTree = "<group>"; };
-		841B259513D8DC46009F0283 /* ArchRole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchRole.m; sourceTree = "<group>"; };
+		841B259313D8DC46009F0283 /* ArchRole-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArchRole-Prefix.pch"; sourceTree = "<group>"; };
 		841B259C13D8DC46009F0283 /* ArchRoleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchRoleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841B259D13D8DC46009F0283 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		841B25A513D8DC47009F0283 /* ArchRoleTests-Info.plist */ = {isa = PBXFileReference; path = "ArchRoleTests-Info.plist"; sourceTree = "<group>"; };
+		841B25A513D8DC47009F0283 /* ArchRoleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArchRoleTests-Info.plist"; sourceTree = "<group>"; };
 		841B25A713D8DC47009F0283 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		841B25A913D8DC47009F0283 /* ArchRoleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchRoleTests.h; sourceTree = "<group>"; };
 		841B25AB13D8DC47009F0283 /* ArchRoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchRoleTests.m; sourceTree = "<group>"; };
+		841B25B513D8DD08009F0283 /* ArchRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchRole.h; sourceTree = "<group>"; };
+		841B25B613D8DD08009F0283 /* ArchRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchRole.m; sourceTree = "<group>"; };
+		841B25BA13D8DD19009F0283 /* objc-rolec */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = "objc-rolec"; sourceTree = "<group>"; };
+		841B25BB13D8DE33009F0283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,9 @@
 		841B258D13D8DC46009F0283 /* ArchRole */ = {
 			isa = PBXGroup;
 			children = (
-				841B259413D8DC46009F0283 /* ArchRole.h */,
-				841B259513D8DC46009F0283 /* ArchRole.m */,
+				841B25B513D8DD08009F0283 /* ArchRole.h */,
+				841B25B613D8DD08009F0283 /* ArchRole.m */,
+				841B25BA13D8DD19009F0283 /* objc-rolec */,
 				841B258E13D8DC46009F0283 /* Supporting Files */,
 			);
 			path = ArchRole;
@@ -124,6 +131,7 @@
 				841B258F13D8DC46009F0283 /* ArchRole-Info.plist */,
 				841B259013D8DC46009F0283 /* InfoPlist.strings */,
 				841B259313D8DC46009F0283 /* ArchRole-Prefix.pch */,
+				841B25BB13D8DE33009F0283 /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841B25B713D8DD08009F0283 /* ArchRole.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +211,9 @@
 /* Begin PBXProject section */
 		841B257A13D8DC46009F0283 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Architechies;
+			};
 			buildConfigurationList = 841B257D13D8DC46009F0283 /* Build configuration list for PBXProject "ArchRole" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -226,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B259213D8DC46009F0283 /* InfoPlist.strings in Resources */,
+				841B25BC13D8DE33009F0283 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +248,7 @@
 			files = (
 				841B25A813D8DC47009F0283 /* InfoPlist.strings in Resources */,
 				841B25AA13D8DC47009F0283 /* ArchRoleTests.h in Resources */,
+				841B25BD13D8DE33009F0283 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841B259613D8DC46009F0283 /* ArchRole.m in Sources */,
+				841B25B813D8DD08009F0283 /* ArchRole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B25AC13D8DC47009F0283 /* ArchRoleTests.m in Sources */,
+				841B25B913D8DD08009F0283 /* ArchRole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
