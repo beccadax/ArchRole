@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841B258813D8DC46009F0283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258713D8DC46009F0283 /* Cocoa.framework */; };
+		841B259213D8DC46009F0283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B259013D8DC46009F0283 /* InfoPlist.strings */; };
+		841B259613D8DC46009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B259513D8DC46009F0283 /* ArchRole.m */; };
+		841B259E13D8DC46009F0283 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B259D13D8DC46009F0283 /* SenTestingKit.framework */; };
+		841B259F13D8DC46009F0283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258713D8DC46009F0283 /* Cocoa.framework */; };
+		841B25A213D8DC46009F0283 /* ArchRole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258413D8DC46009F0283 /* ArchRole.framework */; };
+		841B25A813D8DC47009F0283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B25A613D8DC47009F0283 /* InfoPlist.strings */; };
+		841B25AA13D8DC47009F0283 /* ArchRoleTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 841B25A913D8DC47009F0283 /* ArchRoleTests.h */; };
+		841B25AC13D8DC47009F0283 /* ArchRoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25AB13D8DC47009F0283 /* ArchRoleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841B25A013D8DC46009F0283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841B257A13D8DC46009F0283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841B258313D8DC46009F0283;
+			remoteInfo = ArchRole;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841B258413D8DC46009F0283 /* ArchRole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArchRole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841B258713D8DC46009F0283 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		841B258A13D8DC46009F0283 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		841B258B13D8DC46009F0283 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		841B258C13D8DC46009F0283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		841B258F13D8DC46009F0283 /* ArchRole-Info.plist */ = {isa = PBXFileReference; path = "ArchRole-Info.plist"; sourceTree = "<group>"; };
+		841B259113D8DC46009F0283 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		841B259313D8DC46009F0283 /* ArchRole-Prefix.pch */ = {isa = PBXFileReference; path = "ArchRole-Prefix.pch"; sourceTree = "<group>"; };
+		841B259413D8DC46009F0283 /* ArchRole.h */ = {isa = PBXFileReference; path = ArchRole.h; sourceTree = "<group>"; };
+		841B259513D8DC46009F0283 /* ArchRole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchRole.m; sourceTree = "<group>"; };
+		841B259C13D8DC46009F0283 /* ArchRoleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchRoleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841B259D13D8DC46009F0283 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		841B25A513D8DC47009F0283 /* ArchRoleTests-Info.plist */ = {isa = PBXFileReference; path = "ArchRoleTests-Info.plist"; sourceTree = "<group>"; };
+		841B25A713D8DC47009F0283 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		841B25A913D8DC47009F0283 /* ArchRoleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchRoleTests.h; sourceTree = "<group>"; };
+		841B25AB13D8DC47009F0283 /* ArchRoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchRoleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841B258013D8DC46009F0283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841B258813D8DC46009F0283 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841B259813D8DC46009F0283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841B259E13D8DC46009F0283 /* SenTestingKit.framework in Frameworks */,
+				841B259F13D8DC46009F0283 /* Cocoa.framework in Frameworks */,
+				841B25A213D8DC46009F0283 /* ArchRole.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841B257813D8DC46009F0283 = {
+			isa = PBXGroup;
+			children = (
+				841B258D13D8DC46009F0283 /* ArchRole */,
+				841B25A313D8DC47009F0283 /* ArchRoleTests */,
+				841B258613D8DC46009F0283 /* Frameworks */,
+				841B258513D8DC46009F0283 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841B258513D8DC46009F0283 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841B258413D8DC46009F0283 /* ArchRole.framework */,
+				841B259C13D8DC46009F0283 /* ArchRoleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841B258613D8DC46009F0283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841B258713D8DC46009F0283 /* Cocoa.framework */,
+				841B259D13D8DC46009F0283 /* SenTestingKit.framework */,
+				841B258913D8DC46009F0283 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841B258913D8DC46009F0283 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841B258A13D8DC46009F0283 /* AppKit.framework */,
+				841B258B13D8DC46009F0283 /* CoreData.framework */,
+				841B258C13D8DC46009F0283 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		841B258D13D8DC46009F0283 /* ArchRole */ = {
+			isa = PBXGroup;
+			children = (
+				841B259413D8DC46009F0283 /* ArchRole.h */,
+				841B259513D8DC46009F0283 /* ArchRole.m */,
+				841B258E13D8DC46009F0283 /* Supporting Files */,
+			);
+			path = ArchRole;
+			sourceTree = "<group>";
+		};
+		841B258E13D8DC46009F0283 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841B258F13D8DC46009F0283 /* ArchRole-Info.plist */,
+				841B259013D8DC46009F0283 /* InfoPlist.strings */,
+				841B259313D8DC46009F0283 /* ArchRole-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841B25A313D8DC47009F0283 /* ArchRoleTests */ = {
+			isa = PBXGroup;
+			children = (
+				841B25A913D8DC47009F0283 /* ArchRoleTests.h */,
+				841B25AB13D8DC47009F0283 /* ArchRoleTests.m */,
+				841B25A413D8DC47009F0283 /* Supporting Files */,
+			);
+			path = ArchRoleTests;
+			sourceTree = "<group>";
+		};
+		841B25A413D8DC47009F0283 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841B25A513D8DC47009F0283 /* ArchRoleTests-Info.plist */,
+				841B25A613D8DC47009F0283 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		841B258113D8DC46009F0283 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		841B258313D8DC46009F0283 /* ArchRole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841B25AF13D8DC47009F0283 /* Build configuration list for PBXNativeTarget "ArchRole" */;
+			buildPhases = (
+				841B257F13D8DC46009F0283 /* Sources */,
+				841B258013D8DC46009F0283 /* Frameworks */,
+				841B258113D8DC46009F0283 /* Headers */,
+				841B258213D8DC46009F0283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArchRole;
+			productName = ArchRole;
+			productReference = 841B258413D8DC46009F0283 /* ArchRole.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		841B259B13D8DC46009F0283 /* ArchRoleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841B25B213D8DC47009F0283 /* Build configuration list for PBXNativeTarget "ArchRoleTests" */;
+			buildPhases = (
+				841B259713D8DC46009F0283 /* Sources */,
+				841B259813D8DC46009F0283 /* Frameworks */,
+				841B259913D8DC46009F0283 /* Resources */,
+				841B259A13D8DC46009F0283 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841B25A113D8DC46009F0283 /* PBXTargetDependency */,
+			);
+			name = ArchRoleTests;
+			productName = ArchRoleTests;
+			productReference = 841B259C13D8DC46009F0283 /* ArchRoleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841B257A13D8DC46009F0283 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 841B257D13D8DC46009F0283 /* Build configuration list for PBXProject "ArchRole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 841B257813D8DC46009F0283;
+			productRefGroup = 841B258513D8DC46009F0283 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841B258313D8DC46009F0283 /* ArchRole */,
+				841B259B13D8DC46009F0283 /* ArchRoleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841B258213D8DC46009F0283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841B259213D8DC46009F0283 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841B259913D8DC46009F0283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841B25A813D8DC47009F0283 /* InfoPlist.strings in Resources */,
+				841B25AA13D8DC47009F0283 /* ArchRoleTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		841B259A13D8DC46009F0283 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841B257F13D8DC46009F0283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841B259613D8DC46009F0283 /* ArchRole.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841B259713D8DC46009F0283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841B25AC13D8DC47009F0283 /* ArchRoleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841B25A113D8DC46009F0283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841B258313D8DC46009F0283 /* ArchRole */;
+			targetProxy = 841B25A013D8DC46009F0283 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		841B259013D8DC46009F0283 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841B259113D8DC46009F0283 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		841B25A613D8DC47009F0283 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841B25A713D8DC47009F0283 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841B25AD13D8DC47009F0283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		841B25AE13D8DC47009F0283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		841B25B013D8DC47009F0283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchRole/ArchRole-Prefix.pch";
+				INFOPLIST_FILE = "ArchRole/ArchRole-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		841B25B113D8DC47009F0283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchRole/ArchRole-Prefix.pch";
+				INFOPLIST_FILE = "ArchRole/ArchRole-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		841B25B313D8DC47009F0283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchRole/ArchRole-Prefix.pch";
+				INFOPLIST_FILE = "ArchRoleTests/ArchRoleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		841B25B413D8DC47009F0283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchRole/ArchRole-Prefix.pch";
+				INFOPLIST_FILE = "ArchRoleTests/ArchRoleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841B257D13D8DC46009F0283 /* Build configuration list for PBXProject "ArchRole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841B25AD13D8DC47009F0283 /* Debug */,
+				841B25AE13D8DC47009F0283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841B25AF13D8DC47009F0283 /* Build configuration list for PBXNativeTarget "ArchRole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841B25B013D8DC47009F0283 /* Debug */,
+				841B25B113D8DC47009F0283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		841B25B213D8DC47009F0283 /* Build configuration list for PBXNativeTarget "ArchRoleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841B25B313D8DC47009F0283 /* Debug */,
+				841B25B413D8DC47009F0283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841B257A13D8DC46009F0283 /* Project object */;
+}
