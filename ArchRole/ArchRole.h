@@ -11,66 +11,15 @@
 
 #import <Foundation/Foundation.h>
 
-/* 
- * A role is basically a parallel class and interface.
- * 
- * The interface is applied to any class that adopts the role.  Methods that must 
- * be implemented by those classes are marked @required; methods supplied by the 
- * role are marked @optional.  The interface must also conform to the ArchRole 
- * protocol; it may also conform to other roles' protocols, but ArchRole must 
- * be explicitly listed (otherwise the role machinery will assume it's an 
- * ordinary protocol).
- * 
- * @protocol MyRole <AnotherRole, AThirdRole, ArchRole>
- * - (void)requiredMethod;
- * @optional
- * - (void)providedMethod1;
- * - (void)providedMethod2;
- * @end
- * 
- * The class (which must have the same name as the role) must inherit directly 
- * from ArchRole and must implement all of the optional methods listed in the 
- * protocol.  All methods implemented in the class--even ones not listed in 
- * the protocol--will be added to classes that do the role.
- * 
- * @interface MyRole : ArchRole
- * - (void)providedMethod1;
- * - (void)providedMethod2;
- * @end
- * @interface MyRole (ConvenienceDeclarations) <AnotherRole, AThirdRole, ArchRole>
- * - (void)requiredMethod;
- * @end
- * 
- * The easiest way to achieve this is to use the objc-rolec preprocessor.  This 
- * accepts Objective-C files with an .rh extension and syntax like:
- * 
- * @role MyRole <AnotherRole, AThirdRole>
- * 
- * - (void)requiredMethod;
- * 
- * @provides
- * 
- * - (void)providedMethod1;
- * - (void)providedMethod2;
- * 
- * @end
- * 
- * And creates a counterpart .h file with standard Objective-C syntax.  Note 
- * that objc-rolec does not really understand Objective-C syntax, so be careful 
- * with comments, preprocessor directives, and string literals.
- * 
- * To adopt a role in your class, adopt its protocol and arrange for 
- * +[YourClass composeDeclaredRoles] to be called.  The easiest way to do this
- * is to add INITIALIZE_DECLARED_ROLES at the top of your @implementation 
- * section, which will insert an +initialize method for you.  If you have your
- * own +initialize method, call it there instead.
- */
-
 @interface NSObject (ArchRole)
 
+// If you can't use INITIALIZE_DECLARED_ROLES, arrange for this to be called.
 + (void)composeDeclaredRoles;
+// Semi-internal.
 + (void)composeRoleForProtocol:(Protocol *)roleProtocol;
 
+// Override and return NO for methods you don't want added.  The 'role' 
+// parameter can be compared to the return value of +[YourRole role].
 + (BOOL)shouldComposeInstanceMethod:(SEL)selector fromRole:(id)role;
 + (BOOL)shouldComposeClassMethod:(SEL)selector fromRole:(id)role;
 
