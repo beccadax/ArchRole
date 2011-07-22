@@ -18,6 +18,7 @@
 		841B25B713D8DD08009F0283 /* README.md in Headers */ = {isa = PBXBuildFile; fileRef = 841B25B513D8DD08009F0283 /* README.md */; };
 		841B25B813D8DD08009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25B613D8DD08009F0283 /* ArchRole.m */; };
 		841B25B913D8DD08009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25B613D8DD08009F0283 /* ArchRole.m */; };
+		84AF360313D8F8FF0037644D /* ArchRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AF360213D8F8FF0037644D /* ArchRole.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		841B25B513D8DD08009F0283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		841B25B613D8DD08009F0283 /* ArchRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchRole.m; sourceTree = "<group>"; };
 		841B25BA13D8DD19009F0283 /* objc-rolec */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = "objc-rolec"; sourceTree = "<group>"; };
+		84AF360213D8F8FF0037644D /* ArchRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchRole.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		841B258D13D8DC46009F0283 /* ArchRole */ = {
 			isa = PBXGroup;
 			children = (
+				84AF360213D8F8FF0037644D /* ArchRole.h */,
 				841B25B613D8DD08009F0283 /* ArchRole.m */,
 				841B25BA13D8DD19009F0283 /* objc-rolec */,
 				841B258E13D8DC46009F0283 /* Supporting Files */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B25B713D8DD08009F0283 /* README.md in Headers */,
+				84AF360313D8F8FF0037644D /* ArchRole.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
