@@ -88,7 +88,7 @@ Adopting a defined role
 To adopt a role in your class, adopt its protocol with the angle bracket syntax 
 and arrange for `+[YourClass composeDeclaredRoles]` to be called.  The easiest 
 way to do this is to add `INITIALIZE_DECLARED_ROLES` at the top of your 
-`@implementation` section, which will insert an `+initialize` method for you.  
+`@implementation` section, which will insert an `+initialize` method for you. 
 If you have your own `+initialize` method, call it there instead.
 
     @interface MyClass <MyRole>
@@ -133,7 +133,7 @@ Authors
 -------
 
 Original version by Brent Royal-Gordon of Architechies 
-<brent@architechies.com, http://architechies.com>.
+&lt;brent@architechies.com, http://architechies.com&gt;.
 
 If you use this library in your code, I'd love to hear about it--please drop 
 me an e-mail.
