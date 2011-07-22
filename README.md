@@ -14,13 +14,17 @@ classes.
 In `ArchRole`, a role defines a set of required methods and properties that the 
 adopting class must implement, either directly or by adopting other roles that 
 satisfy them.  The role also provides methods and properties to the classes 
-that adopt them.  When `+initialize` is called on the adopting class, the 
-methods in all of its roles are copied into 
+that adopt them.  When `+initialize` is called on the adopting class, all of 
+the methods in the roles it adopts are copied into it.
+
+Unlike mixins, two conflicting roles cannot both be adopted by a single class; 
+the application will throw an exception upon launch unless the conflict is 
+resolved.
 
 What does a role look like in code?
 -----------------------------------
 
-A role is basically a parallel class and protocol.
+A role is composed of a matching protocol and class.
 
 The protocol is applied to any class that adopts the role.  Methods that must 
 be implemented by those classes are marked `@required`; methods supplied by the 
@@ -43,7 +47,9 @@ protocol).
 The role's class must have the same name as the role, must inherit directly 
 from the `ArchRole` class, and must implement all of the optional methods 
 listed in the protocol.  All methods implemented in the class--even ones not 
-listed in the protocol--will be added to classes that do the role.
+listed in the protocol--will be added to classes that do the role.  The role's 
+class cannot be instantiated; it is merely a container for the methods that the 
+role implements.
 
     @interface MyRole : ArchRole
     - (void)providedMethod1;
@@ -89,7 +95,8 @@ To adopt a role in your class, adopt its protocol with the angle bracket syntax
 and arrange for `+[YourClass composeDeclaredRoles]` to be called.  The easiest 
 way to do this is to add `INITIALIZE_DECLARED_ROLES` at the top of your 
 `@implementation` section, which will insert an `+initialize` method for you. 
-If you have your own `+initialize` method, call it there instead.
+If you have your own `+initialize` method, call `+composeDeclaredRoles` there 
+instead.
 
     @interface MyClass <MyRole>
     
@@ -105,15 +112,30 @@ If you have your own `+initialize` method, call it there instead.
     
     @end
 
-A class cannot adopt two roles that both define the same method (doing so will 
-cause an exception during your app's launch).  However, you can exclude one of 
-the two methods by overriding the `+shouldComposeInstanceMethod:fromRole:` or 
-`+shouldComposeClassMethod:fromRole:` method and returning NO for the 
-appropriate selector and role.
+Role conflicts
+--------------
 
-If your class defines a method with the same name as one of your roles' 
-methods, the role's version will not be included in your class.  There is 
-currently no way to call the role's version of the method.
+Role composition is careful to avoid conflicts between different roles.
+
+If a role provides a method that's already defined in the adopting class, the 
+class's implementation is always the one used; a role method will never 
+override a class method.
+
+If a class adopts two roles which both provide implementations of the same 
+method, ArchRoles throws an exception.  This occurs during role composition, 
+which usually occurs the first time your class is used.
+
+A class can resolve the conflict by choosing not to compose a version of the 
+method that it doesn't want.  To do this, override the 
+`+shouldComposeInstanceMethod:fromRole:` or `+shouldComposeClassMethod:fromRole:` 
+method and return NO for the versions you don't want.
+
+Note that *all* methods from the roles are added during composition, not just 
+the ones that are publicly declared in the protocol, and so two roles with 
+identically-named private methods will conflict.  We recommend prefixing any 
+private role methods to avoid conflicts.
+
+Method renaming isn't currently supported.  Perhaps it should be.
 
 Notes on the current release
 ----------------------------
