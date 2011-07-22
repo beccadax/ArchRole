@@ -3,7 +3,10 @@
 //  ArchRole
 //
 //  Created by Brent Royal-Gordon on 7/18/11.
-//  Copyright 2011 Architechies. All rights reserved.
+//  Copyright 2011 Architechies.
+//  
+//  This software is licensed under the MIT License.  License text available at:
+//    <http://www.opensource.org/licenses/mit-license.php>
 //
 
 #import "ArchRole.h"
