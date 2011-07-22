@@ -50,7 +50,7 @@ listed in the protocol--will be added to classes that do the role.
     - (void)providedMethod2;
     @end
     
-    @interface MyRole (ConvenienceDeclarations) <AnotherRole, AThirdRole, ArchRole>
+    @interface MyRole (ConvenienceDeclarations) <AnotherRole, AThirdRole>
     - (void)requiredMethod;
     @end
 
