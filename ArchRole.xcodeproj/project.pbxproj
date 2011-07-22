@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841B258813D8DC46009F0283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258713D8DC46009F0283 /* Cocoa.framework */; };
+		840526A713D940D20071AA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840526A613D940D20071AA02 /* Foundation.framework */; };
+		840526A813D940EB0071AA02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 841B25B513D8DD08009F0283 /* README.md */; };
+		840526A913D941390071AA02 /* objc-rolec in Resources */ = {isa = PBXBuildFile; fileRef = 841B25BA13D8DD19009F0283 /* objc-rolec */; };
 		841B259213D8DC46009F0283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B259013D8DC46009F0283 /* InfoPlist.strings */; };
 		841B259E13D8DC46009F0283 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B259D13D8DC46009F0283 /* SenTestingKit.framework */; };
-		841B259F13D8DC46009F0283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258713D8DC46009F0283 /* Cocoa.framework */; };
 		841B25A213D8DC46009F0283 /* ArchRole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841B258413D8DC46009F0283 /* ArchRole.framework */; };
 		841B25A813D8DC47009F0283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841B25A613D8DC47009F0283 /* InfoPlist.strings */; };
 		841B25AA13D8DC47009F0283 /* ArchRoleTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 841B25A913D8DC47009F0283 /* ArchRoleTests.h */; };
 		841B25AC13D8DC47009F0283 /* ArchRoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25AB13D8DC47009F0283 /* ArchRoleTests.m */; };
-		841B25B713D8DD08009F0283 /* README.md in Headers */ = {isa = PBXBuildFile; fileRef = 841B25B513D8DD08009F0283 /* README.md */; };
 		841B25B813D8DD08009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25B613D8DD08009F0283 /* ArchRole.m */; };
 		841B25B913D8DD08009F0283 /* ArchRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B25B613D8DD08009F0283 /* ArchRole.m */; };
-		84AF360313D8F8FF0037644D /* ArchRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AF360213D8F8FF0037644D /* ArchRole.h */; };
+		84AF360313D8F8FF0037644D /* ArchRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AF360213D8F8FF0037644D /* ArchRole.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840526A613D940D20071AA02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		841B258413D8DC46009F0283 /* ArchRole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArchRole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		841B258713D8DC46009F0283 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		841B258A13D8DC46009F0283 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		841B258B13D8DC46009F0283 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		841B258C13D8DC46009F0283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841B258813D8DC46009F0283 /* Cocoa.framework in Frameworks */,
+				840526A713D940D20071AA02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B259E13D8DC46009F0283 /* SenTestingKit.framework in Frameworks */,
-				841B259F13D8DC46009F0283 /* Cocoa.framework in Frameworks */,
 				841B25A213D8DC46009F0283 /* ArchRole.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +96,7 @@
 		841B258613D8DC46009F0283 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				841B258713D8DC46009F0283 /* Cocoa.framework */,
+				840526A613D940D20071AA02 /* Foundation.framework */,
 				841B259D13D8DC46009F0283 /* SenTestingKit.framework */,
 				841B258913D8DC46009F0283 /* Other Frameworks */,
 			);
@@ -161,7 +160,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841B25B713D8DD08009F0283 /* README.md in Headers */,
 				84AF360313D8F8FF0037644D /* ArchRole.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B259213D8DC46009F0283 /* InfoPlist.strings in Resources */,
+				840526A813D940EB0071AA02 /* README.md in Resources */,
+				840526A913D941390071AA02 /* objc-rolec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
