@@ -133,7 +133,7 @@ Authors
 -------
 
 Original version by Brent Royal-Gordon of Architechies 
-&lt;brent@architechies.com, http://architechies.com&gt;.
+(<brent@architechies.com>, <http://architechies.com>).
 
 If you use this library in your code, I'd love to hear about it--please drop 
 me an e-mail.
